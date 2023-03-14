@@ -18,6 +18,7 @@
       <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/notes/ch7.ipynb" beforeDir="false" afterPath="$USER_HOME$/DataspellProjects/stat303_dataSci/notes/ch7.ipynb" afterDir="false" />
       <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/proj_revision.ipynb" beforeDir="false" />
       <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/student-mat.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectReportTemplate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectReportTemplate.ipynb" afterDir="false" />
     </list>
@@ -33,7 +34,6 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MR0bUOpXZHoN86MB4RIvUC7T0u" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
