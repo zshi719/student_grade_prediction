@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/LinearModel_Stat303-2.iml" filepath="$PROJECT_DIR$/.idea/LinearModel_Stat303-2.iml" />
+      <module fileurl="file://$USER_HOME$/DataspellProjects/stat303_dataSci/.idea/stat303_dataSci.iml" filepath="$USER_HOME$/DataspellProjects/stat303_dataSci/.idea/stat303_dataSci.iml" />
     </modules>
   </component>
 </project>
