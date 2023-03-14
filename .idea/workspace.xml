@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="656a5833-2115-4ea6-8e04-d82fb1c57ce0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Project Code Template.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project Code Template.ipynb" afterDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/Assignment_D/Assignment D_VS.ipynb" beforeDir="false" afterPath="$USER_HOME$/DataspellProjects/stat303_dataSci/Assignment_D/Assignment D_VS.ipynb" afterDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/PracticeFinalAnswers.html" beforeDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/PracticeFinalAnswers.ipynb" beforeDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/housing_test.csv" beforeDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/housing_train.csv" beforeDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/prac_final.html" beforeDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/prac_final.ipynb" beforeDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/prac_final.pdf" beforeDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/test_heart.csv" beforeDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/train_heart.csv" beforeDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/notes/ch7.ipynb" beforeDir="false" afterPath="$USER_HOME$/DataspellProjects/stat303_dataSci/notes/ch7.ipynb" afterDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/proj_revision.ipynb" beforeDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/student-mat.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectReportTemplate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectReportTemplate.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +33,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MR0bUOpXZHoN86MB4RIvUC7T0u" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
