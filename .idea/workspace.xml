@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="656a5833-2115-4ea6-8e04-d82fb1c57ce0" name="Changes" comment="">
-      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/Assignment_D/Assignment D_VS.ipynb" beforeDir="false" afterPath="$USER_HOME$/DataspellProjects/stat303_dataSci/Assignment_D/Assignment D_VS.ipynb" afterDir="false" />
-      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/PracticeFinalAnswers.html" beforeDir="false" />
-      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/PracticeFinalAnswers.ipynb" beforeDir="false" />
-      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/housing_test.csv" beforeDir="false" />
-      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/housing_train.csv" beforeDir="false" />
-      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/prac_final.html" beforeDir="false" />
-      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/prac_final.ipynb" beforeDir="false" />
-      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/prac_final.pdf" beforeDir="false" />
-      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/test_heart.csv" beforeDir="false" />
-      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/train_heart.csv" beforeDir="false" />
-      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/notes/ch7.ipynb" beforeDir="false" afterPath="$USER_HOME$/DataspellProjects/stat303_dataSci/notes/ch7.ipynb" afterDir="false" />
-      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/proj_revision.ipynb" beforeDir="false" />
-      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/student-mat.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/DataspellProjects/stat303_dataSci/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/final/final_exam_VS.ipynb" beforeDir="false" afterPath="$USER_HOME$/DataspellProjects/stat303_dataSci/final_exam/final/final_exam_VS.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectReportTemplate.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectReportTemplate.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JAVA_report.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/JAVA_report.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,21 +26,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/victoriashi/PythonProjects/LinearModel_Stat303-2/data&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/victoriashi/PythonProjects/LinearModel_Stat303-2/data",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
