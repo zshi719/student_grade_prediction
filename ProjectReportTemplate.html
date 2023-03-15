@@ -3068,9 +3068,6 @@ categorical columns:
 </section>
 <section id="exploratory-data-analysis" class="level2" data-number="7">
 <h2 data-number="7" class="anchored" data-anchor-id="exploratory-data-analysis"><span class="header-section-number">7</span> Exploratory data analysis</h2>
-<p>Put the relevant EDA here (visualizations, tables, etc.) that helped you figure out useful predictors for developing the model(s). Only put the EDA that ended up being useful towards developing your final model(s).</p>
-<p>List the insights (as bullet points) you got from EDA that ended up being useful towards developing your final model.</p>
-<p>Again, if there are too many plots / tables, you may put them into appendix, and just mention the insights you got from them.</p>
 <ol type="1">
 <li>During the base model development, we transformed the response variable G3 grade into a binary variable using the common pass/fail boundary as the standard. In an exam worth a total of 20 points, a grade of 12 or higher is considered passing, while anything below is deemed failing. We used this standard to classify if a student passes or fails consistently throughout the analysis. We plotted the grade distribution in its raw format (out of 20) and in its binary form, respectively, to visualize the general distribution of student grades.</li>
 <li>Period 1 (<code>G1</code>) and Period 2 (<code>G2</code>) grades are strongly correlated with each other, as evidenced by the darker shade on the pairwise correlation plot.</li>
@@ -3090,18 +3087,15 @@ categorical columns:
 <section id="approach" class="level2" data-number="8">
 <h2 data-number="8" class="anchored" data-anchor-id="approach"><span class="header-section-number">8</span> Approach</h2>
 <p>During our data exploration, we recognized that predicting a continuous score from mostly binary predictor variables would be challenging. This is because binary variables typically have a non-linear relationship with the outcome variable, which can lead to inaccurate predictions and a lack of precision in capturing the nuances of the data. Thus, we decided to approach the research question with a classification method, which allowed us to develop the following three different models for different use cases:</p>
-<p>Base model used for inference: This model is designed to determine the predictors that have the most impact on students’ final grades. Nested regression model for prediction: This model identifies students expected to perform well in the class based on their earlier semester performance. Progress model: This model examines the factors associated with students’ improvement between the first and second grading periods. In our classification models, we prioritize minimizing the false positive rate (FPR) as it is crucial to identify and assist students who genuinely require help with their grades. Misclassifying a student who needs help as not needing it may not be as harmful as the opposite scenario, where a student who genuinely needs help is not identified and subsequently fails. Thus, our focus is on reducing FPR to minimize the chances of misclassifying students in need.</p>
+<ul>
+<li>Base model used for inference: This model is designed to determine the predictors that have the most impact on students’ final grades.</li>
+<li>Nested regression model for prediction: This model identifies students expected to perform well in the class based on their earlier semester performance.</li>
+<li>Progress model: This model examines the factors associated with students’ improvement between the first and second grading periods. In our classification models, we prioritize minimizing the false positive rate (FPR) as it is crucial to identify and assist students who genuinely require help with their grades. Misclassifying a student who needs help as not needing it may not be as harmful as the opposite scenario, where a student who genuinely needs help is not identified and subsequently fails. Thus, our focus is on reducing FPR to minimize the chances of misclassifying students in need.</li>
+</ul>
 </section>
 <section id="developing-the-model" class="level2" data-number="9">
 <h2 data-number="9" class="anchored" data-anchor-id="developing-the-model"><span class="header-section-number">9</span> Developing the model</h2>
-<p>Explain the steps taken to develop and improve the base model - informative visualizations / addressing modeling assumption violations / variable transformation / interactions / outlier treatment / influential points treatment / addressing over-fitting / addressing multicollinearity / variable selection - stepwise regression, lasso, ridge regression).</p>
-<p>Did you succeed in achieving your goal, or did you fail? Why?</p>
-<p><strong>Final model equation</strong>.</p>
-<p>Progress model:</p>
-<p>G1_G2 = 6.3710 - 0.4348* age + 0.9210* reason_other + 0.5279* Mjob_other - 0.4735* roantic - 0.1581* famrel</p>
-<p>G2_G3 = -2.4021 + 0.6112* Mjob_teacher - 0.4904* reason_course + 0.3824* famrel</p>
-<p><strong>Important: This section should be rigorous and thorough. Present detailed information about decision you made, why you made them, and any evidence/experimentation to back them up.</strong></p>
-<p>In this study, a classification approach was used to predict student performance. However, this was not a logistic regression classification problem. Instead, the response was manually categorized by setting a threshold and assigning values greater than the threshold as “pass” and values less than or equal to the threshold as “fail”. This manual categorization approach is a valid method for solving this . By setting the threshold and categorizing the response, it is possible to effectively convert the continuous response into a categorical response, which can then be used for classification.</p>
+<p>In this study, we utilized a manual categorization approach to convert the continuous response variable into a categorical response. W set a threshold and categorized the values greater than the threshold as “pass” and values less than or equal to the threshold as “fail”. This valid method allowed us to effectively predict student performance through classification.</p>
 <section id="base-model-development" class="level3" data-number="9.1">
 <h3 data-number="9.1" class="anchored" data-anchor-id="base-model-development"><span class="header-section-number">9.1</span> Base Model Development</h3>
 <p>Several techniques were used to develop and evaluate the model for the initial and variable selection phase and base model development. The following is a summary of the techniques used:</p>
@@ -3129,11 +3123,12 @@ categorical columns:
 </section>
 <section id="progress-model-development" class="level3" data-number="9.3">
 <h3 data-number="9.3" class="anchored" data-anchor-id="progress-model-development"><span class="header-section-number">9.3</span> Progress Model Development</h3>
-<p>In the development of the progress model, the result from previous models do not seem to work. I tried to use the same predictors to build logistic models for G1_G2 and G2_G3 but there are several problems that we encounter:</p>
+<p>The progress model seeks to identify attributes that indicate whether a student has improved between G1 and G2 and between G2 and G3.</p>
+<p>We considered building on top of previous findings. However, using the same set of predictor from previous models does not yield convincing results:</p>
 <ol type="1">
 <li>Models are not significant: best LLR p-value achieved for the model for G1_G2 is around 0.01, which is far less than other models built in this project.</li>
-<li>Many variables are insignificant as the p-value for individual coefficient is hight.</li>
-<li>Measurements of accuracy of classification are largely affected by the chosen threshold: even if we change the threshold by 0.01, there might be huge change in the observations that belong to FN and FP, so we need to balance between accuracy and recall.</li>
+<li>Most of variables are insignificant as the p-value for individual coefficient is high.</li>
+<li>Measurements of classification accuracy is largely affected by the chosen threshold: even if we change the threshold by 0.01, there might be huge change in the observations that belong to FN and FP, so we need to balance between accuracy and recall.</li>
 <li>After we balance the measurements and choose a fixed threshold, the highest accuracy/recall is less than 65% and the lowest FPR/FNR is larger than 35%</li>
 <li>We also tried to calculate ROC-AUC, which is independent from the threshold, and the value is only around 0.65.</li>
 </ol>
@@ -3141,14 +3136,11 @@ categorical columns:
 <p>To select the best predictors, Lasso is performed on the train dataset twice, because we need two new models for G1_G2 and G2_G3. We definitely don’t want too many predictors in our models because giving too many advices to the students and families might make them feel overwhelmed. Therefore, I selected five predictors based on the absolute values of the coefficients after Lasso. It turns out that they match with our EDA but have small differences.</p>
 <p>For the model built for G1_G2, there is one selected variable from Lasso that is different from the variables selected in EDA, so I build two models and compare them. Since our main concern is to help students and we don’t want to leave out any student who actually needs help. In other words, predicting a student as able to improve when they cannot (False positives) will be harmful because the teacher will put effort in this student. Thus, the most important metric in the classification of improvement is FP. The model based on Lasso has lower FPR and other measurements are reasonable, so we will use progress_model_1_1 to predict whether a student improves from the first test to the second test.</p>
 <p>We will have similar consideration for the two models builts for G2_G3. However, in this scenario, the model built using the predictors from Lasso has much higher recall (43.8) than model using predictors from EDA (25%) while the FPR of the Lasso model (41.2%) is much higher than the FPR of the model using EDA (28.8%). Since both models have an obvious disadvantage, we will select the final model based on what we concern more–FPR, so we will use progress_model_2_2 to predict whether a student improves from the second test to the final test.</p>
+<p>Final Progress model: 1. <span class="math display">\[G1_G2 \sim 6.3710 - 0.4348* age + 0.9210* reason_other + 0.5279* Mjob_other - 0.4735* roantic - 0.1581* famrel\]</span> 2. <span class="math display">\[G2_G3 \sim -2.4021 + 0.6112* Mjob_teacher - 0.4904* reason_course + 0.3824* famrel\]</span></p>
 </section>
 </section>
 <section id="conclusions-and-recommendations-to-stakeholders" class="level2" data-number="10">
 <h2 data-number="10" class="anchored" data-anchor-id="conclusions-and-recommendations-to-stakeholders"><span class="header-section-number">10</span> Conclusions and Recommendations to stakeholder(s)</h2>
-<p>What conclusions do you draw based on your model? If it is inference you may draw conclusions based on the coefficients, statistical significance of predictors / interactions, etc. If it is prediction, you may draw conclusions based on prediction accuracy, or other performance metrics.</p>
-<p>How do you use those conclusions to come up with meaningful recommendations for stakeholders? The recommendations must be action-items for stakeholders that they can directly implement without any further analysis. Be as precise as possible. The stakeholder(s) are depending on you to come up with practically implementable recommendations, instead of having to think for themselves.</p>
-<p>If your recommendations are not practically implementable by stakeholders, how will they help them? Is there some additional data / analysis / domain expertise you need to do to make the recommendations implementable?</p>
-<p>Do the stakeholder(s) need to be aware about some limitations of your model? Is your model only good for one-time use, or is it possible to update your model at a certain frequency (based on recent data) to keep using it in the future? If it can be used in the future, then for how far into the future?</p>
 <p>Despite the limitations of the current dataset, the following conclusions and recommendations can be beneficial to stakeholders:</p>
 <p>Findings:</p>
 <ol type="1">
@@ -3270,8 +3262,6 @@ Performed variable selection on an exhaustive set of predictors to address multi
 </tr>
 
 </tbody></table>
-<p>List the <strong>challenges</strong> you faced when collaborating with the team on GitHub. Are you comfortable using GitHub? Do you feel GitHuB made collaboration easier? If not, then why? <em>(Individual team members can put their opinion separately, if different from the rest of the team)</em></p>
-<p>As jupyter notebook cannot easily detect</p>
 </section>
 <section id="references" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="references">References</h2>
