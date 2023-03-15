@@ -3117,7 +3117,7 @@ categorical columns:
 <p>Variables for the logistic regression model are chosen with Lasso. Since we want to keep the logistic regression interpretable, we found the 5 predictors that had the biggest absolute value and used those as predictors in a logistic regression. All the predictors used were found to be significant and the overall model is significant as indicated by low coefficient p-values and a low LLR p-value, respectively.</p>
 <p>We then tried to see if the model would be appropriate for prediction by checking the accuracy and other metrics. We want to minimize FPR (students who are not doing well incorrectly classified as doing well), but it was difficult to find a threshold that kept FPR low, but maintained decent accuracy. Moreover, there we big differences between training and testing data ROC_AUC, as well as some other metrics, that suggest that the model might be overfitting some predictors.</p>
 <p>This led us to explore other models that might be more useful for prediction.</p>
-<p>Final logistic regression model: <span class="math display">\[p( \mathbf{passing}) = \frac{1}{1 + e ^{-(-1.3128 \mathbf{failures}  -1.6826 \mathbf{schoolsup}  - 1.3522 \mathbf{Mjob\_teacher} + 0.4451 \mathbf{Medu} + 0.8009 \mathbf{sex}})\]</span></p>
+<p>Final logistic regression model: <span class="math display">\[p(\mathbf{passing}) = \frac{1}{1 + e^{-(-1.3128 \mathbf{failures}  -1.6826 \mathbf{schoolsup}  - 1.3522\mathbf{Mjob\_teacher} + 0.4451 \mathbf{Medu} + 0.8009 \mathbf{sex})}}\]</span></p>
 </section>
 <section id="base-model-development" class="level3" data-number="8.2">
 <h3 data-number="8.2" class="anchored" data-anchor-id="base-model-development"><span class="header-section-number">8.2</span> Base Model Development</h3>
@@ -3236,7 +3236,7 @@ Data quality check &amp; preperation; EDA; base model development; Github
 Data quality check, preprocessing and preperation; visualization and EDA of base model; feature selection and variable interactions; report overview.
 </td>
 <td>
-40
+55
 </td>
 </tr>
 <tr>
@@ -3250,7 +3250,7 @@ EDA and progress model development, Github
 explanatory data analysis for the progress model; visualization and variables selection; progress model development and assessment of prediction.
 </td>
 <td>
-10
+12
 </td>
 </tr>
 <tr>
